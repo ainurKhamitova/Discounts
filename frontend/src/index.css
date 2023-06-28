@@ -1,0 +1,273 @@
+
+* {
+  font-family: "Raleway";
+
+}
+header, footer{
+    font-weight: 500;
+}
+.carousel{
+  font-weight: 800;
+}
+
+.carousel-image {
+  position: relative;
+}
+
+.carousel-image:hover .image-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container-main{
+  min-height: 1000px;
+  font-family: "Raleway";
+}
+
+.discount-card {
+  max-width: 250px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    color: grey
+
+}
+
+.discount-card img {
+  transition: all linear 0.25s;
+  height: 200px;
+  object-fit: cover;
+ 
+
+}
+
+.discount-card .content {
+  position: relative;
+  padding: 15px;
+  background-color: #FFF;
+} 
+
+.discount-card .content::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  top: -10px;
+  left: 0px;
+  right: 0px;
+  background-color: #FFF;
+  z-index: 0;
+  transform: skewY(3deg);
+} 
+
+.discount-card:hover img {
+  transform: rotate(5deg) scale(1.1, 1.1);
+ 
+}
+
+.discount-card .discount-title {
+  font-family: 'Playfair Display', serif;
+  color: black;
+  font-size: 20px;
+  overflow: hidden;
+  /* Hide overflow content */
+  text-overflow: ellipsis;
+  /* Add ellipsis for long text */
+  white-space: nowrap;
+  /* Prevent wrapping */
+
+}
+
+.discount-card .discount-views-icon {
+  color: rgb(154, 150, 150);
+}
+.discount-card .discount-views {
+  color: rgb(154, 150, 150);
+  font-size: 15px;
+}
+
+.discount-card .discount {
+
+  font-weight: bold;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: #bc1010;
+  font-size: 25px;
+  
+}
+
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Roboto', 'Helvetica Neue',
+  /* Set your desired background color and opacity for the overlay */
+}
+
+.discount-modal {
+  color: rgb(93, 91, 91);
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" on;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+.discount-modal .img  {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+    
+   
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43, .41, .22, .91);
+    ;
+  
+    &::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; 
+    }
+  
+    @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%; 
+    }
+    }
+}
+
+
+
+.discount-modal .content {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.discount-modal .description {
+flex: 1 1 auto;
+font-size: 0.875rem;
+line-height: 1.5;
+margin-bottom: 1.25rem;
+}
+
+
+
+.discount-modal .discount-title {
+  color: rgb(37, 36, 36);
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+ 
+
+}
+
+.discount-modal .discount-views {
+  font-size: 20px;
+}
+
+.discount-modal .discount {
+  font-weight: bold;
+  position: absolute;
+  left: 15px;
+  bottom: 35px;
+  color: #cf1919;
+  font-size: 30px;
+ 
+}
+
+.dropdown-button{
+  height: 50px;
+}
+.dropdown-menu[data-bs-popper] {
+  
+  left: auto;
+  right: 0%;
+  
+}
+
+.city-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.city-item:hover{
+  background-color: lightgray;
+  cursor: pointer;
+  flex-basis: 50%;
+}
+
+
+
+.details {
+  background: white;
+  display: inline-block;
+  margin: 8px;
+  perspective: 1000;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+}
+
+.details-image {
+  background: rgba(0, 0, 0, 0.1);
+  height: 0;
+  padding-bottom: 75%;
+}
+.price-section {
+  margin-bottom: 20px;
+}
+
+.price-section h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+@media (max-width: 576px) {
+  .city-item {
+    flex-basis: 100%;
+  }
+  .container-main {
+    min-height: 300px;
+    font-family: "Raleway";
+  }
+  
+}

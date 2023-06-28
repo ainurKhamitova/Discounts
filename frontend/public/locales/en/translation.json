@@ -1,0 +1,31 @@
+ {
+
+    "header": {
+        "logo" : "Logo",
+        "my_city": "My City",
+        "all_cities": "All Cities",
+        "choose": "Please choose your city"
+    },
+
+    "category": {
+        "rating": "Rating",
+        "discount_rate": "Discount Rate",
+        "alphabet": "Alphabetical order",
+        "date": "Date",
+        "none": "No Filter",
+        "all": "All categories"
+    },
+    "search": {
+        "text": "Search"
+    },
+     "discounts": {
+        "btn": "More"
+    }
+    
+
+    
+
+    
+
+}
+
